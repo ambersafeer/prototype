@@ -156,6 +156,67 @@ h2{
 	text-align: center;
 }
 
+.profile-container-2{
+	display:grid;
+	gap: 1rem 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"yamberp yamberb yamberb"
+		"peterb peterb peterp"
+		"pollyp pollyb pollyb"
+		"pipb pipb pipp"
+		"simonp simonb simonb"
+}
+
+/*assign each element/class name a grid-area name*/
+
+.yamber-bio{
+	grid-area:yamberb;
+}
+
+.yamber-port{
+	grid-area: yamberp;
+}
+
+.peter-bio{
+	grid-area: peterb;
+}
+
+.peter-port{
+	grid-area:peterp;
+}
+
+.polly-bio{
+	grid-area: pollyb;
+}
+
+.polly-port{
+	grid-area:pollyp;
+}
+
+.pip-bio{
+	grid-area:pipb;
+}
+
+.pip-port{
+	grid-area: pipp;
+}
+
+.simon-bio{
+	grid-area: simonb;
+}
+
+.simon-port{
+	grid-area:simonp;
+}
+
+
+
+
+
+
+
 .profile-container img{
 	border-radius: 100%;
 }
@@ -180,6 +241,7 @@ h2{
 	gap: 2rem 4rem;
 	align-items:center;
 }
+
 
 .gallery-container h4{
 	text-align: center;
