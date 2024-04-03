@@ -6,7 +6,7 @@ body{
 	color: #2f3e46;
 	/* color properties */
 
-	font-family:"le-monde-livre-classic-byol", Cambria;
+	font-family:"mrs-eaves-xl-serif", Cambria;
 	/*at least four fonts, fave font, windows font, mac font, general family font */
 	font-size: 1.125rem; /* 16px = 1 rem */ /* 22px = 1 em */
 	line-height: 150%; /* adjust as needed */
@@ -63,16 +63,22 @@ h2{
 
 .overlay-text {
   	position: absolute;
-  	top: 50%; 
+  	top: 20%; 
   	left: 50%; 
   	transform: translate(-50%, -50%); 
-  	background-color: #000000; 
-  	color: #fff; 
-  	padding: 10px 20px; 
+  	color: white; 
+  	padding: 20px 20px; 
   	font-size: 20px; 
   	text-align: center;
 }
-		
+
+.primary-statement{
+	width: auto;
+	background:#4a4e69;
+	padding: 20px 20px;
+	box-shadow: 10px 10px 2px rgba(0,0,0,0.4);
+	border-radius:100px;
+}
 
 /*
 .primary-statement{
@@ -99,8 +105,8 @@ h2{
 	transform: translate(-50%, 0%);
 
 	width: 600px;
-	background:#E2E9F4;
-	box-shadow: 10px 10px rgba(0,0,0,0.2);
+	background:#4a4e69;
+	box-shadow: 10px 10px 2px rgba(0,0,0,0.4);
 	border-radius:100px;
 }
 
@@ -145,7 +151,28 @@ h2{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 2rem 4rem;
-	align-items: center;
+	align-items:flex-start;
+}
+
+.profile-container img{
+	border-radius: 100%;
+}
+
+.showcase-container{
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+	gap: 2rem 4rem;
+	align-items:baseline;
+}
+.gallery-container{
+	display:grid;
+	grid-template-columns: auto auto auto;
+	gap: 2rem 4rem;
+	align-items:center;
+}
+
+.gallery-container h4{
+	text-align: center;
 }
 
 .footer{
